@@ -20,7 +20,7 @@ android {
 }
 
 dependencies {
-    compile "com.foursquare:placepicker:0.7.0"
+    compile rootProject.ext.placePicker
     compile rootProject.ext.supportAppCompat
 
     compile rootProject.ext.glide
