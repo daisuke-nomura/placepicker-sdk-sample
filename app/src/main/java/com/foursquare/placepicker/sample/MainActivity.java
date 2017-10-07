@@ -30,16 +30,16 @@ public class MainActivity extends AppCompatActivity {
                     public void loadImage(Context context, ImageView v, String url) {
                         Glide.with(context)
                                 .load(url)
-                                .placeholder(com.foursquare.snaptoplace.sample.R.drawable.category_none)
+                                .placeholder(R.drawable.category_none)
                                 .dontAnimate()
                                 .into(v);
                     }
                 })
                 .build());
 
-        setContentView(com.foursquare.snaptoplace.sample.R.layout.activity_main);
+        setContentView(R.layout.activity_main);
 
-        Button findPlace = (Button) findViewById(com.foursquare.snaptoplace.sample.R.id.btnPlacePick);
+        Button findPlace = (Button) findViewById(R.id.btnPlacePick);
         findPlace.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button currentPlace = (Button) findViewById(com.foursquare.snaptoplace.sample.R.id.btnCurrentPlace);
+        Button currentPlace = (Button) findViewById(R.id.btnCurrentPlace);
         currentPlace.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button starbucks = (Button) findViewById(com.foursquare.snaptoplace.sample.R.id.btnStarbucksSearch);
+        Button starbucks = (Button) findViewById(R.id.btnStarbucksSearch);
         starbucks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
