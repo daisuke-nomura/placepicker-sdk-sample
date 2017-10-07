@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        Button findPlace = (Button) findViewById(R.id.btnPlacePick);
+        Button findPlace = findViewById(R.id.btnPlacePick);
         findPlace.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button currentPlace = (Button) findViewById(R.id.btnCurrentPlace);
+        Button currentPlace = findViewById(R.id.btnCurrentPlace);
         currentPlace.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button starbucks = (Button) findViewById(R.id.btnStarbucksSearch);
+        Button starbucks = findViewById(R.id.btnStarbucksSearch);
         starbucks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
